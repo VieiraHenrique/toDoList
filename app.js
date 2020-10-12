@@ -4,7 +4,8 @@ const list = document.getElementById('list');
 const template = document.querySelector('template');
 const clear = document.getElementById('clear');
 
-todoSubmit.addEventListener('click', function () {
+todoSubmit.addEventListener('click', function (e) {
+    e.preventDefault();
     let item = todoInput.value;
     if (item !== '') {
         let newItem = document.createElement('li');
@@ -15,10 +16,8 @@ todoSubmit.addEventListener('click', function () {
         const trash = newItem.querySelector('i').addEventListener('click', function(){
         this.parentElement.remove()
         })
-    }
-    
+    }  
 })
-
 clear.addEventListener('click', function(){
     list.innerHTML = '';
 })
