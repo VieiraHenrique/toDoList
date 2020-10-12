@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container mt-6">
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <div id="main">
+                    <h1>ToDoList</h1>
+                    <p>Dynamic ToDo list with local storage implemented</p>
+                    <form>
+                        <div class="task-form mt-3">
+                            <input id="todoInput" type="text" placeholder="...write your task">
+                            <input id="todoSubmit" type="submit" value="Add task" class="my-2">
+                        </div>
+                    </form>
+                    <div class="separator mt-4">
+                    </div>
+                    <div class="task-list">
+                        <ul id="list">
+                            <template>
+                                <p>Walk out the dog</p>
+                                <i class="fas fa-trash-alt"></i>
+                            </template>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn" id="clear">Clear tasks</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

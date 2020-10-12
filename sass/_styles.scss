@@ -1,0 +1,80 @@
+body {
+    background: url(../img/bg.jpg);
+    background-size: cover;
+}
+
+#main {
+    background: $white;
+    box-shadow: $soft-shadow;
+    padding: 5rem;
+    border-radius: 1rem;
+
+    h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: $gray-700;
+    }
+
+    p {
+        text-align: center;
+        color: $gray-600;
+    }
+
+    .task-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type=text] {
+        box-shadow: $soft-shadow;
+        padding: 1rem;
+        font-size: 1.6rem;
+        width: 100%;
+        border-radius: .5rem;
+    }
+
+    input[type=submit] {
+        cursor: pointer;
+        background: $color-primary;
+        color: $white;
+        padding: 1rem;
+        border-radius: .5rem;
+        width: 100%;
+    }
+
+    .separator {
+        background: transparent;
+        box-shadow: $soft-shadow;
+        height: .1rem;
+        width: 100%
+    }
+
+    .task-list {
+        ul {
+            margin: 2rem 0;
+            border-radius: .5px;
+            box-shadow: $soft-shadow;
+        }
+
+        li {
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        i {
+            color: $color-accent;
+            cursor: pointer;
+        }
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 2rem;
+        background: $gray-900;
+        color: $white;
+        padding: 1rem 2rem;
+    }
+}
